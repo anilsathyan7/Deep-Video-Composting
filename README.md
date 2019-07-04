@@ -22,10 +22,10 @@ N.B: Only the inference code is provides here, please refer the links in the ack
 
 ## Demo
 
-# Input
+### Input
 ![Screenshot](input.gif)
 
-# Output
+### Output
 ![Screenshot](output.gif)
 
 ## Versioning
