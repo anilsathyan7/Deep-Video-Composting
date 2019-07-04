@@ -22,8 +22,13 @@ N.B: Currently, only the inference code is provided; please refer the links in t
 
 ## Demo
 
-### Input
+### Inputs
+
+Input1
 ![Screenshot](input.gif)
+
+Input2
+![Screenshot](input1.gif)
 
 ### Output
 ![Screenshot](output.gif)
