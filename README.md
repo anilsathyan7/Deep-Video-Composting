@@ -22,7 +22,7 @@ N.B: Only the inference code is provides here, please refer the links in the ack
 
 ## Screenshot
 
-![Screenshot](isketch_screenshot1.jpg)
+![Screenshot](output.gif)
 
 
 ## Versioning
