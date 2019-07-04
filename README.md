@@ -25,9 +25,11 @@ N.B: Currently, only the inference code is provided; please refer the links in t
 ### Inputs
 
 Input1
+
 ![Screenshot](input.gif)
 
 Input2
+
 ![Screenshot](input1.gif)
 
 ### Output
