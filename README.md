@@ -20,10 +20,13 @@ N.B: Only the inference code is provides here, please refer the links in the ack
 * Download model files : https://drive.google.com/open?id=1XRxpVu2I70Pu0IchXXEcfq9GDQw8XeT5
 * GPU with CUDA support
 
-## Screenshot
+## Demo
 
+# Input
+![Screenshot](input.gif)
+
+# Output
 ![Screenshot](output.gif)
-
 
 ## Versioning
 
