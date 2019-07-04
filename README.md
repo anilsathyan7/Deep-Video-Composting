@@ -1,5 +1,12 @@
 # Deep-Video-Composting
 
+A python script for video composting .
+
+It takes two videos as input and produces a single video composite as output. The person in the first video is segmented out and blended seamlessly into the second video (background) .It uses deeplab v3 for segmentation and a custom network (caffe) for color harmonization.Since the tensorflow model was trained on PASCAL VOC dataset, we can segment out any object belonging to those classes and combine them with the other video to produce a video composite.
+
+Sample input and output videos along with link to pretrained modles are provided in respective folders.
+
+N.B: Only the inference code is provides here, please refer the links in the acknowledgement section for training and other implementation details.
 
 ## Dependencies
 
@@ -8,12 +15,10 @@
 * Caffe
 * Opencv, PIL, Scikit-Image
 
-## Features
+## Prerequisites
 
-* A paint canvas with draw & erase.
-* Recognizes 100 different objects/shapes.
-* Shows top three predictions.
-* Provides voice output with tts.
+* Download model files : https://drive.google.com/open?id=1XRxpVu2I70Pu0IchXXEcfq9GDQw8XeT5
+* GPU with CUDA support
 
 ## Screenshot
 
