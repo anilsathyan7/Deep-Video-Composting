@@ -6,7 +6,7 @@ It takes two videos as input and produces a single video composite as output. Th
 
 Sample input and output videos along with link to pretrained modles are provided in respective folders.
 
-N.B: Only the inference code is provides here, please refer the links in the acknowledgement section for training and other implementation details.
+N.B: Currently, only the inference code is provided; please refer the links in the acknowledgement section for training and other implementation details.
 
 ## Dependencies
 
