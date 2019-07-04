@@ -3,10 +3,8 @@ import numpy as np
 import sys
 import os
 
-
 from scipy.ndimage.interpolation import rotate
 from scipy.ndimage.filters import gaussian_filter
-
 
 import cv2
 import numpy as np
@@ -26,7 +24,6 @@ import io
 from PIL import Image
 
 sys.path.append('utils')
-#import get_dataset_colormap
 
 class DeepLabModel():
     """Class to load deeplab model and run inference."""
@@ -40,7 +37,7 @@ class DeepLabModel():
         """Creates and loads pretrained deeplab model."""
         self.graph = tf.Graph()
         
-        graph_def = 'DeepHarmonization/frozen_inference_graph_dm05.pb'
+        graph_def = 'models/frozen_inference_graph_dm05.pb'
         with gfile.FastGFile(graph_def, 'rb') as f:
             graph_def = tf.GraphDef()
             graph_def.ParseFromString(f.read())
@@ -93,16 +90,14 @@ caffe.set_device(0)
 caffe.set_mode_gpu()
 
 # load net
-net = caffe.Net('DeepHarmonization/model/deploy_512.prototxt', 'DeepHarmonization/model/harmonize_iter_200000.caffemodel', caffe.TEST)
+net = caffe.Net('models/deploy_512.prototxt', 'models/harmonize_iter_200000.caffemodel', caffe.TEST)
 
 size = np.array([512,512])
 
-
-
 # Open Video
 
-vidcap1 = cv2.VideoCapture('DeepHarmonization/videos/left_pal.mp4')
-vidcap2 = cv2.VideoCapture('DeepHarmonization/videos/right_pal.mp4')
+vidcap1 = cv2.VideoCapture('videos/oldman_left_pal.mp4')
+vidcap2 = cv2.VideoCapture('videos/autumn_right_pal.mp4')
 final = x= np.zeros((1,512,1024,3))
 outvid = cv2.VideoWriter('outvid.avi',cv2.VideoWriter_fourcc('M','J','P','G'), 10, (1024,512))
 ## Get video fps
@@ -114,6 +109,7 @@ fps1 = vidcap2.get(cv2.CAP_PROP_FPS)
 print('Frames per second of video 2: {0}'.format(fps1))
 
 # Segmentation Mobilenet
+f
 i=0
 while True:
     
