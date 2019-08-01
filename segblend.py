@@ -98,7 +98,7 @@ size = np.array([512,512])
 
 vidcap1 = cv2.VideoCapture('videos/oldman_left_pal.mp4')
 vidcap2 = cv2.VideoCapture('videos/autumn_right_pal.mp4')
-final = x= np.zeros((1,512,1024,3))
+
 outvid = cv2.VideoWriter('outvid.avi',cv2.VideoWriter_fourcc('M','J','P','G'), 10, (1024,512))
 ## Get video fps
 
@@ -109,7 +109,7 @@ fps1 = vidcap2.get(cv2.CAP_PROP_FPS)
 print('Frames per second of video 2: {0}'.format(fps1))
 
 # Segmentation Mobilenet
-f
+
 i=0
 while True:
     
